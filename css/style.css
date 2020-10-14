@@ -85,7 +85,7 @@
 /* ---------- dashboard items ---------- */
 
 .survey {
-    background-color: blue;
+    background-color: lightblue;
     grid-row: 1;
     grid-column: 1;
 }
@@ -99,12 +99,12 @@
 .weather {
     background-color: aquamarine;
     grid-row: 4;
-    grid-column: 1;
+    grid-column: 1 / span 2;
 }
 
 .map {
     background-color: cadetblue;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 3;
     grid-column: 2;
 }
 
@@ -124,7 +124,7 @@
     }
 
     .survey {
-        background-color: blue;
+        background-color: lightblue;
         grid-row: 1;
         grid-column: 1;
     }
