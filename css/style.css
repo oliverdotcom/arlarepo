@@ -25,6 +25,10 @@
     padding: 55px 0;
 }
 
+#home {
+    background-color: var(--green1);
+}
+
 
 .hide {
     visibility: hidden;
@@ -74,15 +78,23 @@
 .dashboard {
     position: absolute;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 25%;
-    background-color: var(--gray2);
+    grid-gap: 16px;
+    background-color: #fff;
     width: 80vw;
     height: 80vh;
-    right: 20px;
+    right: 40px;
+    border-radius: 8px;
 }
 
 /* ---------- dashboard items ---------- */
+.dashboard :nth-child(1),
+.dashboard :nth-child(2),
+.dashboard :nth-child(3),
+.dashboard :nth-child(4) {
+    border-radius: 8px;
+}
 
 .survey {
     background-color: lightblue;
