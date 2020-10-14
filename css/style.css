@@ -93,8 +93,7 @@
 .dashboard :nth-child(3),
 .dashboard :nth-child(4) {
     border-radius: 8px;
-    box-shadow:
-        0 0.1px 0.5px rgba(0, 0, 0, 0.011),
+    box-shadow: 0 0.1px 0.5px rgba(0, 0, 0, 0.011),
         0 0.3px 1.2px rgba(0, 0, 0, 0.016),
         0 0.5px 2.3px rgba(0, 0, 0, 0.02),
         0 0.9px 4px rgba(0, 0, 0, 0.024),
