@@ -115,11 +115,16 @@ body {
 }
 
 .curtain ul {
-    width: 50%;
+    width: 60%;
     list-style: none;
     color: #fff;
     margin-top: 6vh;
     padding: 0;
+}
+
+.curtain ul a {
+    text-decoration: none;
+    color: white;
 }
 
 .curtain ul li {
@@ -137,6 +142,7 @@ body {
     margin: 0;
     font-size: 6.5vw;
     margin-left: 30px;
+    width: 40vw;
 }
 
 #home>nav {
@@ -157,6 +163,11 @@ body {
         width: calc(20% - 1vw);
         margin: 0;
         margin-top: 20vh;
+    }
+
+    #home>nav a {
+        text-decoration: none;
+        color: white;
     }
 
     #home>nav ul {
