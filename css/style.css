@@ -7,8 +7,188 @@ body {
 .topnav {
     background-color: #fff;
     height: 8%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
+.topnav a {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.topnav a img {
+    width: 100%;
+}
+
+.topnav>i {
+    font-size: 7vw;
+    margin-right: 20px;
+}
+
+.topnav .curtain {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-color: var(--green1);
+    transition: left .4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curtain.active {
+    left: 0;
+}
+
+/* font-family: (--font-family); */
+.curtain .fa-times {
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 8vw;
+    color: #fff;
+}
+
+.account-details {
+    margin-top: 5vh;
+    width: 50vw;
+    height: 60vw;
+    font-family: (--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-details .profile-picture {
+    width: 40vw;
+    height: 40vw;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-image: url(/img/profile_picture.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.account-details h3 {
+    color: #fff;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 8vw;
+}
+
+.account-details h4 {
+    color: #fff;
+    margin: 0;
+
+}
+
+.account-details form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 5vw;
+    font-weight: 300;
+}
+
+.account-details form select {
+    margin-left: 10px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: (--font-family);
+    box-shadow: transparent;
+}
+
+.account-details form select option {
+    background-color: var(--green1);
+    box-shadow: none;
+}
+
+.curtain ul {
+    width: 50%;
+    list-style: none;
+    color: #fff;
+    margin-top: 6vh;
+    padding: 0;
+}
+
+.curtain ul li {
+    display: flex;
+    margin: 20px 0;
+}
+
+.curtain ul li i {
+    margin: 0;
+    width: 6.5vw;
+    font-size: 6.5vw;
+}
+
+.curtain ul li p {
+    margin: 0;
+    font-size: 6.5vw;
+    margin-left: 30px;
+}
+
+#home>nav {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .topnav>i {
+        display: none;
+    }
+
+    .curtain {
+        display: none;
+    }
+
+    #home>nav {
+        display: block;
+        width: calc(20% - 1vw);
+        margin: 0;
+        margin-top: 20vh;
+    }
+
+    #home>nav ul {
+        width: 100%;
+        list-style: none;
+        color: #fff;
+        margin: 0;
+        margin-top: 6vh;
+        padding-left: 0;
+
+    }
+
+    #home>nav ul li {
+        display: flex;
+        margin: 30px 0;
+        margin-left: 30px;
+        cursor: pointer;
+
+    }
+
+    #home>nav ul li i {
+        margin: 0;
+        width: 1.9vw;
+        font-size: 1.9vw;
+    }
+
+    #home>nav ul li p {
+        margin: 0;
+        font-size: 1.9vw;
+        margin-left: 30px;
+    }
+}
 
 /* ---------- login page logo ---------- */
 
@@ -95,6 +275,7 @@ body {
     height: 88%;
     margin: 1% 0;
     right: 1vw;
+    top: calc(10% - 1vw);
     border-radius: 8px;
 }
 

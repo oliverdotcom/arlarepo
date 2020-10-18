@@ -17,7 +17,7 @@ function showPage(pageId) {
 
 // sets active tabbar/ menu item
 function setActiveTab(pageId) {
-    let pages = document.querySelectorAll(".tabbar a");
+    let pages = document.querySelectorAll("nav>ul li");
     for (let page of pages) {
         if (`#${pageId}` === page.getAttribute("href")) {
             page.classList.add("active");
@@ -43,12 +43,3 @@ function pageChange() {
 }
 
 pageChange(); // called by default when the app is loaded for the first time
-
-function showLoader(show) {
-    let loader = document.querySelector('#loader');
-    if (show) {
-        loader.classList.remove("hide");
-    } else {
-        loader.classList.add("hide");
-    }
-}

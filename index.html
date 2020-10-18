@@ -8,9 +8,12 @@
     <meta name="description" content="Get started with HTML, CSS and JavaScript">
     <meta name="author" content="Rasmus Cederdorff">
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 
@@ -19,7 +22,78 @@
     <!-- pages -->
     <!-- home page -->
     <section id="home" class="page">
-        <div class="topnav"></div>
+        <div class="topnav">
+            <a href="index.html"><img src="img/arlalogo.png" alt="Arla Logo"></a>
+            <i class="fas fa-bars"></i>
+            <div class="curtain">
+                <i class="fas fa-times"></i>
+                <div class="account-details">
+                    <div class="profile-picture"></div>
+                    <h3>Jørgen Øe</h3>
+                    <form>
+                        <h4>Farm</h4>
+                        <select id="farm">
+                            <option value="farm">12345</option>
+                            <option value="farm">12346</option>
+                        </select>
+                    </form>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-pen"></i>
+                        <p>Survey</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-tasks"></i>
+                        <p>My progress</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Leaderboard</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-sun"></i>
+                        <p>Weather</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <p>Settings</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <p>Dashboard</p>
+                </li>
+                <li>
+                    <i class="fas fa-pen"></i>
+                    <p>Survey</p>
+                </li>
+                <li>
+                    <i class="fas fa-tasks"></i>
+                    <p>My progress</p>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Leaderboard</p>
+                </li>
+                <li>
+                    <i class="fas fa-sun"></i>
+                    <p>Weather</p>
+                </li>
+                <li>
+                    <i class="fas fa-cogs"></i>
+                    <p>Settings</p>
+                </li>
+            </ul>
+        </nav>
         <div class="dashboard">
             <div class="survey">SURVEY</div>
             <div class="progress">PROGRESS</div>
@@ -29,15 +103,30 @@
     </section>
 
     <!-- about page -->
-    <section id="about" class="page">
+    <section id="survey" class="page">
 
-        <p>This is my about page</p>
+        <p>This is my survey page</p>
     </section>
 
     <!-- clients page -->
-    <section id="clients" class="page">
+    <section id="progress" class="page">
 
-        <p>Hmm, there should be some clients right here...</p>
+        <p>Hmm, there should be some charts right here...</p>
+    </section>
+    <!-- leaderboard page -->
+    <section id="leaderboard" class="page">
+
+        <p>Hmm, there should be some statistics right here...</p>
+    </section>
+    <!-- weather page -->
+    <section id="weather" class="page">
+
+        <p>Hmm, there should be some forecast right here...</p>
+    </section>
+    <!-- settings page -->
+    <section id="settings" class="page">
+
+        <p>Hmm, there should be some settings right here...</p>
     </section>
 
     <!-- contact page -->
@@ -55,11 +144,6 @@
         <!-- firebase auth container  -->
         <section id="firebaseui-auth-container"></section>
     </section>
-
-    <!-- loader  -->
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
     <!-- Add Firebase products that you want to use -->
