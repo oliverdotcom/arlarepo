@@ -57,15 +57,38 @@ function hidePages() {
     }
 }
 
+function hideTabs() {
+    for (let tab of navigation) {
+        tab.classList.remove("active")
+    }
+}
+
 for (let i = 2; i < 6; i++) {
     navigation[i].addEventListener("click", () => {
         hidePages();
+        hideTabs();
         pages[i - 2].style.display = 'block';
+        navigation[i].classList.add("active")
     })
 }
 navigation[1].addEventListener("click", () => {
     survey.style.display = 'block';
+    hideTabs();
+    navigation[0].classList.add("active");
+
 })
 navigation[0].addEventListener("click", () => {
     hidePages()
+    hideTabs();
+    navigation[0].classList.add("active")
+})
+
+const surveyClose = document.querySelector("#survey span.close");
+const surveyIntro = document.querySelector("#survey .intro");
+const introClose = document.querySelector("#survey .intro> button");
+surveyClose.addEventListener("click", () => {
+    survey.style.display = 'none';
+})
+introClose.addEventListener("click", () => {
+    surveyIntro.style.display = 'none';
 })

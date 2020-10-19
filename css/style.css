@@ -1,5 +1,11 @@
+@font-face {
+    src: url(../fonts/arla_fonts/ArlaInterFace-Regular.ttf);
+    font-family: Arla inertface;
+}
+
 body {
     overflow: hidden;
+    font-family: Arla inertface;
 }
 
 /* ---------- top nav ---------- */
@@ -61,7 +67,7 @@ body {
     margin-top: 5vh;
     width: 50vw;
     height: 60vw;
-    font-family: (--font-family);
+    font-family: var(--font-family);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +111,7 @@ body {
     background-color: transparent;
     outline: none;
     border: none;
-    font-family: (--font-family);
+    font-family: var(--font-family);
     box-shadow: transparent;
 }
 
@@ -185,21 +191,34 @@ body {
 
     .page>nav ul li {
         display: flex;
-        margin: 30px 0;
-        margin-left: 30px;
+        height: 60px;
         cursor: pointer;
+        align-items: center;
 
+    }
+
+    .page>nav ul li.active {
+        background-color: white;
+    }
+
+    .page>nav ul li.active i {
+        color: var(--green1);
+    }
+
+    .page>nav ul li.active p {
+        color: var(--green1);
     }
 
     .page>nav ul li i {
         margin: 0;
-        width: 1.9vw;
-        font-size: 1.9vw;
+        width: 2vw;
+        font-size: 2vw;
+        margin-left: 30px;
     }
 
     .page>nav ul li p {
         margin: 0;
-        font-size: 1.9vw;
+        font-size: 2vw;
         margin-left: 30px;
     }
 }

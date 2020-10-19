@@ -1,0 +1,119 @@
+@font-face {
+     src: url(../fonts/arla_fonts/ArlaInterFace-Regular.ttf);
+     font-family: Arla inertface;
+}
+
+#survey {
+     display: block;
+     font-family: Arla inertface;
+}
+
+#survey .intro {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+
+.intro span {
+     display: flex;
+     margin-left: 10px;
+     margin-top: 20px;
+     align-items: center;
+     position: absolute;
+}
+
+.intro span i,
+.intro span p {
+     font-size: 5vw;
+}
+
+.intro span p {
+     margin: 0;
+     margin-left: 10px;
+     font-family: Arla inertface;
+}
+
+.intro img {
+     width: 50%;
+     margin-top: 7vh;
+     align-self: center;
+}
+
+.intro h2 {
+     text-align: center;
+     font-weight: 500;
+     font-size: 9vw;
+}
+
+.intro>p {
+     width: 80%;
+     text-align: center;
+     align-self: center;
+}
+
+.intro button {
+     width: 150px;
+     height: 50px;
+     font-weight: 500;
+     align-self: center;
+     margin-top: 20px;
+     background-color: transparent;
+     outline: none;
+     border: 1px solid #2D3E3E;
+     border-radius: 7px;
+}
+
+.form {
+     width: 100%;
+     height: 100vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.form img {
+     width: 50%;
+     margin-top: 7vh;
+}
+
+@media only screen and (min-width:600px) {
+     .intro span {
+          margin-left: 20px;
+     }
+
+     .intro span i,
+     .intro span p {
+          font-size: 1.2vw;
+     }
+
+     .intro img {
+          width: 10%;
+          margin-top: 150px;
+     }
+
+     .intro h2 {
+          font-size: 4vw;
+     }
+
+     .intro>p {
+          width: 40%;
+          font-size: 1.2vw;
+     }
+
+     .intro button {
+          width: 200px;
+          cursor: pointer;
+          transition: all .3s ease;
+     }
+
+     .intro button:hover {
+          background-color: #2D3E3E;
+          color: white;
+     }
+
+     .form img {
+          width: 10%;
+          margin-top: 150px;
+     }
+}
