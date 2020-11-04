@@ -14,6 +14,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const _db = firebase.firestore();
 let _firebaseUI;
 
 // ========== FIREBASE AUTH ========== //
