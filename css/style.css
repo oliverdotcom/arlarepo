@@ -5,6 +5,7 @@
 
 body {
     font-family: Arla inertface;
+    color: var(--gray1);
 }
 
 /* ---------- top nav ---------- */
@@ -150,7 +151,7 @@ body {
     width: 40vw;
 }
 
-.page>nav {
+.page > nav {
     display: none;
 }
 
@@ -159,7 +160,7 @@ body {
         height: 7vh;
     }
 
-    .topnav>i {
+    .topnav > i {
         display: none;
     }
 
@@ -167,7 +168,7 @@ body {
         display: none;
     }
 
-    .page>nav {
+    .page > nav {
         display: block;
         width: 18%;
         background-color: #fff;
@@ -175,56 +176,42 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;
     }
 
-    .page>nav a {
+    .page > nav a {
         text-decoration: none;
         color: var(--green1);
     }
 
-    .page>nav ul {
+    .page > nav ul {
         width: 100%;
+        min-width: 250px;
         list-style: none;
-        color: var(--green1);
-        margin: 0;
         padding-left: 0;
-
+        margin: 0 0 30px 50px;
     }
 
-    .page>nav ul li {
+    .page > nav ul li {
         display: flex;
-        height: 60px;
+        height: 4.5rem;
         cursor: pointer;
         align-items: center;
-
+        text-align: center;  
     }
 
-    .page>nav ul li.active {
-        background-color: white;
+    .page > nav ul li img {
+        width: 30px;
     }
 
-    .page>nav ul li.active i {
-        color: var(--green1);
+    .page > nav ul li p {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
     }
 
-    .page>nav ul li.active p {
-        color: var(--green1);
-    }
-
-    .page>nav ul li i {
-        margin: 0;
-        width: 2vw;
-        font-size: 2vw;
-        margin-left: 30px;
-    }
-
-    .page>nav ul li p {
-        margin: 0;
-        font-size: 2vw;
-        margin-left: 30px;
+    .page > nav ul li.active {
     }
 }
 
