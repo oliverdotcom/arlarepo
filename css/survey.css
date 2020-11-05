@@ -4,8 +4,9 @@
 }
 
 #survey {
-     display: block;
      font-family: Arla inertface;
+     overflow: hidden;
+
 }
 
 #survey .intro {

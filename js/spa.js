@@ -48,6 +48,7 @@
 const navigation = document.querySelectorAll("nav ul li");
 let pages = document.querySelectorAll("#home .page");
 let survey = document.querySelector("#survey");
+let dashboard = document.querySelector(".dashboard");
 console.log(pages)
 console.log(survey)
 
@@ -68,6 +69,7 @@ for (let i = 2; i < 6; i++) {
         hidePages();
         hideTabs();
         pages[i - 2].style.display = 'block';
+        dashboard.style.display = 'none';
         navigation[i].classList.add("active")
     })
 }
@@ -81,6 +83,7 @@ navigation[0].addEventListener("click", () => {
     hidePages()
     hideTabs();
     navigation[0].classList.add("active")
+    dashboard.style.display = 'grid';
 })
 
 const surveyClose = document.querySelector("#survey span.close");
