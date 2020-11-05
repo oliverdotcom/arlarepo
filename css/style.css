@@ -6,6 +6,7 @@
 body {
     font-family: Arla inertface;
     color: var(--gray1);
+    background-color: var(--green1);
 }
 
 /* ---------- top nav ---------- */
@@ -207,7 +208,9 @@ body {
     }
 
     .page > nav ul li p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #c7c7c7;
         margin-left: 1.5rem;
     }
 
@@ -238,7 +241,6 @@ body {
     height: 100vh;
     width: 100vw;
     animation: fadeIn 0.4s;
-    background-color: var(--green1);
 }
 
 #home {
@@ -323,11 +325,7 @@ body {
 }
 
 /* ---------- dashboard items ---------- */
-.dashboard :nth-child(1),
-.dashboard :nth-child(2),
-.dashboard :nth-child(3),
-.dashboard :nth-child(4),
-.dashboard :nth-child(5) {
+.dashboard-item {
     border-radius: 8px;
     box-shadow: 0 0.1px 0.5px rgba(0, 0, 0, 0.011),
         0 0.3px 1.2px rgba(0, 0, 0, 0.016),
@@ -337,12 +335,29 @@ body {
         0 4px 18px rgba(0, 0, 0, 0.04);
     background-color: #fff;
     margin: 8px;
+    position: relative;
+    margin: 1rem 0 0 1rem;
+}
+
+.dashboard-item::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray3);
+    top: 55px;
+}
+
+.dashboard h2 {
+    margin-left: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .survey {
     grid-row: 1;
     grid-column: 1;
 }
+
 
 .calculator {
     grid-row: 1;
